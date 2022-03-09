@@ -77,7 +77,3 @@ const REWARDS = [
 export default class RewardShopContainer extends LightningElement {
     rewards = REWARDS;
 }
-
-
-// Suggestion for miniproject or at least give us an outline of the solutions: cart button.  Whenever a customer clicks on an item, the count on the counter moves up and it moves down when the customer unclicks. 
-// When the customer clicks on Submit button, it brings the count back to zero. When he clicks on the cart button itself, it brings up the list of items.
