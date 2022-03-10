@@ -6,11 +6,23 @@
   @last modified by  : Ben Learn
 -->
 <template>
-  <div class="slds-box" style="height:200px;display:block;text-align:center">
+  <div class="slds-box" style="height:300px;display:block;text-align:center">
     <b>{itemTitle}</b>
     <br>
     <br>
 
     <img src={itemImgUrl} style="max-height:125px;max-width:125px">
+    <br>
+    <br>
+
+    <div class="text_counter">{count}</div>
+    <br>
+    <br>
+
+    <lightning-button-group>
+      <lightning-button label="+" onclick={handle_add}></lightning-button>
+      <lightning-button label="-" onclick={handle_sub}></lightning-button>
+      <lightning-button label="Submit" onclick={handle_submit}></lightning-button>
+    </lightning-button-group>
   </div>
 </template>

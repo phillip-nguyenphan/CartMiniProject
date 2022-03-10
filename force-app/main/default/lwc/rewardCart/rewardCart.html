@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="Reward Cart List" icon-name="custom:custom14">
+        <ul class="slds-m-around_medium">
+    
+        <template for:each={rewardItems} for:item="item">
+            <li key={item.name}>
+                {item.item_name}: {item.amount}
+            </li>
+        </template>
+        </ul>
+        </lightning-card>
+</template>
